@@ -19,6 +19,9 @@
         <service android:name="JobServiceSample"
                  android:permission="android.permission.BIND_JOB_SERVICE"
             />
+        <service android:name=".FirebaseJobServiceSample"
+                 android:permission="android.permission.BIND_JOB_SERVICE"
+            />
     </application>
 
 </manifest>
