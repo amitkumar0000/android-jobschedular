@@ -42,9 +42,10 @@ How to user JobScheduler
         JobScheduler jobScheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
         jobScheduler.schedule(jobBuilder.build());
         
-  FOR API LEVEL less than 21
+  FOR API LEVEL less than 21 . 
+  Use Firebase JobDispatcher
   
     If you do not have com.google.android.gms:play-services-gcm in your dependency, add this:
-        compile 'com.firebase:firebase-jobdispatcher:0.6.0'  (internally usinh this GCMNetworkManager)
+        compile 'com.firebase:firebase-jobdispatcher:0.6.0'  (internally using this GCMNetworkManager)
     otherwise,
         compile 'com.firebase:firebase-jobdispatcher-with-gcm-dep:0.6.0' . (internally this will use AlarmManager)
